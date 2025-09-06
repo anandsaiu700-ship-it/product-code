@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+	int tickets,price,amount;
+	int discount,payment;
+	printf("enter the no of tickets:");
+	scanf("%d",&tickets);
+	printf("enter price of tickets:");
+	scanf("%d",&price);
+	amount=tickets*price;
+	if(tickets>2){
+		discount=amount/100*35;
+		payment=amount-discount;
+		printf("your discount is %d\n",discount);
+		printf("your amount is %d",payment);
+	}else
+	printf("your amount is %d",amount);
+	return 0;
+	
+}
